@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Post Event - Event Website</title>
+  <link rel="stylesheet" href="post.css">
+  <script src="post.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>EventMake</h1>
+    <nav>
+      <ul>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><button class="add-button">+</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Post Event</h2>
+    <form method="post" action="/post" id="post-form">
+      <div class="inp-div">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="eventName" required>
+      </div>
+      <div class="inp-div">
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="eventDate" required>
+      </div>
+      <div class="inp-div">
+        <label for="event-members">People required:</label>
+        <input type="number" id="event-members" name="eventMembers" required>
+      </div>
+      <div class="inp-div">
+        <label for="eventType">Event Type:</label>
+        <select id="event-type" name = "eventType">
+            <option value="-">--</option>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+        </select>
+      </div>
+      <div class="inp-div" id = "event-place">
+
+      </div>
+      <div class="inp-div">
+        <label for="event-description">Event Description:</label>
+        <textarea id="event-description" name="eventDescription" required></textarea>
+      </div>
+      <div class="inp-div">
+        <label for="whatsapp-no">WhatsApp Number:</label>
+        <input type="string" id="whatsapp-no" name="whatsappNo" required>
+      </div>
+      <button type="submit" id="post-event-button">Post Event</button>
+    </form>    
+  </main>
+  <footer>
+    <!-- Footer content of the website goes here -->
+  </footer>
+</body>
+</html>
